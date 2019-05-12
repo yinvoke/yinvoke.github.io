@@ -88,14 +88,14 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 	float:right;
 }
 .bannerhead h2{
-	color: #C5B7B8;
+	color: #281D24;
 	margin:0;
 	padding:0;
 }
 .bannerhead h2 span{
 	color:#F1E9F2;
 	font-weight:bolder;
-	font-size:1.2em;
+	font-size:1.3em;
 }
 .bannerhead h3{
 	color:#281D24;
@@ -103,7 +103,9 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
     font-size:2.5em;
 }
 .bannerhead p{
-    color:#F1E9F2;
+    color:white;
+    text-shadow: #ccc;
+    font-size:1.1em;
 }
 a.downarrow  span{
  	height:48px;
@@ -193,9 +195,11 @@ a.arrow{
 	position:relative;
 }
 .skill-section h2{
-	color:#C6C3C5;
-	font-weight:300;
-	margin-top:2.5em;
+	color: #C6C3C5;
+	font-weight: 300;
+	margin-top: 2.5em;
+	margin: 0;
+	padding: 2em 0 1em 0;
 }
 .skill-section span{
 	background: #8C868A;
@@ -243,13 +247,15 @@ a.down{
 	text-align:center;
 }
 .Portfolio-section h2{
-	color:#91898D;
-	font-size:2em;
-	padding:2em 0 1em;
+	color: #C6C3C5;
+	font-weight: 300;
+	margin-top: 2.5em;
 	margin: 0;
+	padding: 2em 0 1em 0;
+
 }
 .Portfolio-section span{
-	background:#8C868A;
+	background: #8C868A;
 	height:1px;
 	width:20%;
 	display:inline-block;
@@ -268,13 +274,58 @@ a.down{
 	display:inline-block;
 }
 .portfolio-grid p{
-	margin:3em 1em 0 1em;
+	margin:2.2em 1em 0.5em 1em;
 	color:#504A4C;
 	line-height:25px;
 }
-.portfolio-grid img{
-	width:100%;
+.img_div{
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
+.img_div img{
+	min-width: 88px;
+    height: auto;
+}
+.img_mask {
+	position: absolute;
+	padding: 10px 35px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    opacity: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+
+}
+.img_mask h3 {
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    font: 14px/21px 'open_sans', Arial, sans-serif;
+    color: #999999;
+    -webkit-font-smoothing: antialiased;
+	font-weight: bolder;
+}
+.img_mask h3 a{
+	color: #ffffff;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-size: 14px;
+	text-shadow: 0 0 1px black;
+
+}
+.img_div:hover .img_mask {
+    opacity: 1;           
+}
+
 a.rightarrow  span{
 	height:30px;
 	width:30.5px;
@@ -304,10 +355,11 @@ a.portdown{
 	position:relative;
 }
 .contact-section h2{
-	color:#D2D1D1;
-	font-weight:300;
-	font-size:2.5em;
-	padding-top:1em;
+	color: #C6C3C5;
+	font-weight: 300;
+	margin-top: 2.5em;
+	margin: 0;
+	padding: 2em 0 1em 0;
 }
 .contact-section span{
 	background: #8C868A;
@@ -412,7 +464,7 @@ p.copy-right a{
 		width: 80%;
 	}
 	.portfolio-grid p {
-		margin: 2em 0em 0 0em;
+		margin: 2.2em 0em 1em 0em;
 	}
 	.footer-left p {
 		width: 90%;
@@ -436,9 +488,6 @@ p.copy-right a{
 	.years {
 		margin-bottom: 2em;
 	}
-	.header-section h2 {
-		padding: 1.2em 0 0.8em 0;
-	}
 }
 /*iPad Pro*/
 @media (max-width:1080px){
@@ -455,7 +504,7 @@ p.copy-right a{
 		width: 80%;
 	}
 	.portfolio-grid p {
-		margin: 2em 0em 0 0em;
+		margin: 2.2em 0em 1em 0em;
 	}
 	.footer-left p {
 		width: 90%;
@@ -479,9 +528,6 @@ p.copy-right a{
 	.years {
 		margin-bottom: 2em;
 	}
-	.header-section h2 {
-		padding: 1.2em 0 0.8em 0;
-	}
 }
 /*ipad*/
 @media (max-width:800px){
@@ -492,7 +538,7 @@ p.copy-right a{
 		width: 80%;
 	}
 	.portfolio-grid p {
-		margin: 2em 0em 0 0em;
+		margin: 2.2em 0em 1em 0em;
 	}
 	.footer-left p {
 		width: 90%;
@@ -518,12 +564,10 @@ p.copy-right a{
 	.years {
 		margin-bottom: 2em;
 	}
-	.header-section h2 {
-		padding: 1.2em 0 0.8em 0;
-	}
 	.bannerhead {
 		width: 84%;
 	}
+	
 	.banner {
 		width: 100%;
 	}
@@ -544,8 +588,17 @@ p.copy-right a{
 	.skills {
 		padding: 0 0 5em 0;
 	}
+	.contact-section h2 {
+		margin-top: 1.0em;
+	}
+	.Portfolio-section h2 {
+		margin-top: 1.0em;
+	}
+	.header-section h2 {
+		margin-top: 1.0em;
+	}
 	.skill-section h2 {
-		margin-top: 1.5em;
+		margin-top: 1.0em;
 	}
 	a.arrow {
 		margin: 1em 0 2em 0;
@@ -558,9 +611,6 @@ p.copy-right a{
 	}
 	a.portdown {
 		margin: 2em 0 2em 0em;
-	}
-	.contact-section h2 {
-		padding-top: 0.5em;
 	}
 	.footer {
 		padding: 0 0 10em;
@@ -583,7 +633,7 @@ p.copy-right a{
 		padding: 0.5em 0 0 0;
 	}
 	.portfolio-grid p {
-		margin: 2em 0em 0 0em;
+		margin: 2.2em 0em 1em 0em;
 	}
 	.footer-left p {
 		width: 100%;
@@ -615,9 +665,17 @@ p.copy-right a{
 	.years {
 		margin-bottom: 2em;
 	}
+	.contact-section h2 {
+		margin-top: 1.0em;
+	}
+	.Portfolio-section h2 {
+		margin-top: 1.0em;
+	}
 	.header-section h2 {
-		padding: 0.8em 0 0.5em 0;
-		line-height:1.5em;
+		margin-top: 1.0em;
+	}
+	.skill-section h2 {
+		margin-top: 1.0em;
 	}
 	.bannerhead {
 		width: 100%;
@@ -642,9 +700,6 @@ p.copy-right a{
 	.skills {
 		padding: 0 0 5em 0;
 	}
-	.skill-section h2 {
-		margin-top: 0.5em;
-	}
 	a.arrow {
 		margin: 1em 0 2em 0;
 	}
@@ -656,9 +711,6 @@ p.copy-right a{
 	}
 	a.portdown {
 		margin: 1em 0 2em 0em;
-	}
-	.contact-section h2 {
-		padding-top: 0.5em;
 	}
 	.footer {
 		padding: 0 0 6em;
@@ -738,7 +790,7 @@ p.copy-right a{
 		padding: 0.5em 0 0 0;
 	}
 	.portfolio-grid p {
-		margin: 1.2em 0em 0 0em;
+		margin: 2.2em 0em 1em 0em;
 		line-height: 1.5em;
 	}
 	.footer-left p {
@@ -773,7 +825,22 @@ p.copy-right a{
 		margin-bottom: 1.5em;
 	}
 	.header-section h2 {
-		padding: 0.8em 0 0.5em 0;
+		padding: 0.6em 0 0.7em 0;
+		line-height:1.5em;
+		font-size: 1.6em;
+	}
+	.contact-section h2 {
+		padding: 0.6em 0 0.7em 0;
+		line-height:1.5em;
+		font-size: 1.6em;
+	}
+	.Portfolio-section h2 {
+		padding: 0.6em 0 0.7em 0;
+		line-height:1.5em;
+		font-size: 1.6em;
+	}
+	.skill-section h2 {
+		padding: 0.6em 0 0.7em 0;
 		line-height:1.5em;
 		font-size: 1.6em;
 	}
@@ -803,10 +870,6 @@ p.copy-right a{
 	.skills {
 		padding: 0 0 5em 0;
 	}
-	.skill-section h2 {
-		margin-top: 0.5em;
-		font-size: 1.6em;
-	}
 	a.arrow {
 		margin: 1em 0 2em 0;
 	}
@@ -818,10 +881,6 @@ p.copy-right a{
 	}
 	a.portdown {
 		margin: 1em 0 2em 0em;
-	}
-	.contact-section h2 {
-		padding-top: 0.5em;
-		font-size: 1.6em;
 	}
 	.footer {
 		padding: 0 0 6em;
@@ -865,10 +924,6 @@ p.copy-right a{
 	}
 	.bannerhead h2 {
 		font-size: 1.8em;
-	}
-	.Portfolio-section h2 {
-		font-size: 1.6em;
-		padding: 1em 0 0.3em;
 	}
 	.footer-right input[type="submit"] {
 		float: none;
