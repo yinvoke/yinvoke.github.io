@@ -23,18 +23,18 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 /*------ HEADERBG STARTS---------*/
 .headerbg{
 	background: url(../images/banner.png);
-	min-height:700px;
 	width:100%;
 	background-size: contain;
 	background-repeat: no-repeat;
+	min-height:698px;
 }
+
 /*------ HEADER STARTS---------*/
 .header{
 	background:rgba(0, 0, 0, 0.24);
 	position:fixed;
 	width: 100%;
 	z-index: 999;
-	_position:absolute;
 }
 /*------ CONTAINER STARTS---------*/
 .container{
@@ -404,6 +404,7 @@ p.copy-right a{
 	text-decoration:none;
 }
  /*----- top-top -----*/
+/*14寸*/
 @media (max-width:1280px){
  	.years p {
 		width: 60%;
@@ -414,7 +415,11 @@ p.copy-right a{
 	.footer-left p {
 		width: 90%;
 	}
+	.headerbg {
+		min-height: 500px;
+	}
 }
+/*iPad Pro*/
 @media (max-width:1024px){
 	.container {
 		width:80%;
@@ -435,7 +440,7 @@ p.copy-right a{
 		width: 87%;
 	}
 	.headerbg {
-		min-height: 591px;
+		min-height: 470px;
 	}
 	.banner-info {
 		top: 110px;
@@ -451,6 +456,7 @@ p.copy-right a{
 		padding: 1.2em 0 0.8em 0;
 	}
 }
+/*ipad*/
 @media (max-width:768px){
 	.container {
 		width:80%;
@@ -471,7 +477,7 @@ p.copy-right a{
 		width: 100%;
 	}
 	.headerbg {
-		min-height:500px;
+		min-height:353px;
 	}
 	.banner-info {
 		top: 112px;
@@ -533,108 +539,10 @@ p.copy-right a{
 		padding: 0 0 10em;
 	}
 }
-@media (max-width:640px){
-	.container {
-		width:80%;
-	}
- 	.years p {
-		width: 100%;
-	}
-	.portfolio-grid p {
-		margin: 2em 0em 0 0em;
-	}
-	.footer-left p {
-		width: 90%;
-	}
-	.banner-info {
-		width: 80%;
-	}
-	.footer-right input[type="text"], .footer-right textarea {
-		width: 100%;
-	}
-	.headerbg {
-		min-height:500px;
-	}
-	.banner-info {
-		top: 112px;
-		width: 100%;
-		left: 2%;
-	}
-	a.downarrow {
-		top: 241px;
-		left: 32%;
-	}
-	.years {
-		margin-bottom: 2em;
-	}
-	.header-section h2 {
-		padding: 1.2em 0 0.8em 0;
-	}
-	.bannerhead {
-		width: 84%;
-	}
-	.banner {
-		width: 100%;
-	}
-	.years h4, .years span h4 {
-		margin: 0.5em 0 0 0;
-	}
-	.skill-grid {
-		padding: 1.5em 0;
-	}
-	.skill-grids {
-		padding: 1em 0;
-	}
-	a.down {
-		padding: 0;
-		position: absolute;
-		left: 47%;
-	}
-	.skills {
-		padding: 0 0 5em 0;
-	}
-	.skill-section h2 {
-		margin-top: 1.5em;
-	}
-	a.arrow {
-		margin: 1em 0 2em 0;
-	}
-	.portfolio-grids {
-		padding-top: 1em;
-	}
-	.portfolio-grid {
-		padding: 0 0 2em 0;
-	}
-	a.portdown {
-		margin: 2em 0 2em 0em;
-	}
-	.contact-section h2 {
-		padding-top: 0.5em;
-	}
-	.footer {
-		padding: 0 0 10em;
-	}
-	.about span p {
-		margin-bottom: 2em;
-	}
-	.nav ul{
-		margin:0;
-		padding:0;
-	}
-	.nav ul li {
-		margin: 1.2em 0.5em;
-	}
-	.logo {
-		margin: 0.3em 0 0.5em 0em;
-	}
-	.bannerhead h3 {
-		font-size: 2em;
-		margin: 0.3em 0 0.3em;
-	}
-}
+/*ip67plus*/
 @media (max-width:480px){
 	.container {
-		width:90%;
+		width:95%;
 	}
  	.years p {
 		width: 100%;
@@ -655,7 +563,11 @@ p.copy-right a{
 		width: 100%;
 	}
 	.headerbg {
-		min-height: 457px;
+		background: url(../images/mbanner.png);
+		width:100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		min-height:481px;
 	}
 	.banner-info {
 		top: 36px;
@@ -728,16 +640,16 @@ p.copy-right a{
 		padding:0;
 	}
 	.nav ul li {
-		margin: 0.8em 0.5em;
+		margin: 0.1em 0.7em;
 	}
 	.logo {
-		margin: 0.8em 0 0em 0em;
+		margin: 0;
 		float:none;
 		text-align:center;
 	}
 	.bannerhead h3 {
-		font-size: 1.6em;
-		margin: 0.3em 0 0.3em;
+		font-size: 1.5em;
+		margin: 0.2em 0 0.2em;
 	}
 	.nav {
 		float: none;
@@ -745,7 +657,7 @@ p.copy-right a{
 	}
 	.bannerlogo {
 		float: none;
-		margin-top: 0em;
+		margin-top: 6em;
 		text-align: center;
 	}
 	.skill-grid h3 {
@@ -756,9 +668,139 @@ p.copy-right a{
 		left: 47%;
 	}
 }
+/*ip67x*/
+@media (max-width:414px){
+	.container {
+		width:95%;
+	}
+ 	.years p {
+		width: 100%;
+		line-height: 1.6em;
+		padding: 0.5em 0 0 0;
+	}
+	.portfolio-grid p {
+		margin: 2em 0em 0 0em;
+	}
+	.footer-left p {
+		width: 100%;
+		margin: 0.8em 0 0 0;
+	}
+	.banner-info {
+		width: 80%;
+	}
+	.footer-right input[type="text"], .footer-right textarea {
+		width: 100%;
+	}
+	.headerbg {
+		background: url(../images/mbanner.png);
+		width:100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		min-height:435px;
+	}
+	.banner-info {
+		top: 36px;
+		width: 100%;
+		left: 0%;
+		text-align: center;
+	}
+	a.downarrow {
+		top: 201px;
+		left: 42%;
+	}
+	.years {
+		margin-bottom: 2em;
+	}
+	.header-section h2 {
+		padding: 0.8em 0 0.5em 0;
+		line-height:1.5em;
+	}
+	.bannerhead {
+		width: 100%;
+	}
+	.banner {
+		width: 100%;
+	}
+	.years h4, .years span h4 {
+		margin: 0.5em 0 0 0;
+	}
+	.skill-grid {
+		padding: 1.5em 0;
+	}
+	.skill-grids {
+		padding: 1em 0;
+	}
+	a.down {
+		padding: 0;
+		position: absolute;
+		left: 45%;
+	}
+	.skills {
+		padding: 0 0 5em 0;
+	}
+	.skill-section h2 {
+		margin-top: 0.5em;
+	}
+	a.arrow {
+		margin: 1em 0 2em 0;
+	}
+	.portfolio-grids {
+		padding-top: 1em;
+	}
+	.portfolio-grid {
+		padding: 0 0 2em 0;
+	}
+	a.portdown {
+		margin: 1em 0 2em 0em;
+	}
+	.contact-section h2 {
+		padding-top: 0.5em;
+	}
+	.footer {
+		padding: 0 0 6em;
+	}
+	.about span p {
+		margin-bottom: 2em;
+		width: 100%;
+		line-height: 1.6em;
+	}
+	.nav ul{
+		margin:0;
+		padding:0;
+	}
+	.nav ul li {
+		margin: 0.1em 0.7em;
+	}
+	.logo {
+		margin: 0;
+		float:none;
+		text-align:center;
+	}
+	.bannerhead h3 {
+		font-size: 1.5em;
+		margin: 0.2em 0 0.2em;
+	}
+	.nav {
+		float: none;
+		text-align:center;
+	}
+	.bannerlogo {
+		float: none;
+		margin-top: 6em;
+		text-align: center;
+	}
+	.skill-grid h3 {
+		font-size: 1.5em;
+	}
+	.up {
+		bottom: 1%;
+		left: 47%;
+	}
+}
+/*ip5*/
 @media (max-width:320px){
 	.container {
-		width:90%;
+		width:80%;
 	}
 	.header div.container,.banner div.container{
 		padding:0;
@@ -784,10 +826,14 @@ p.copy-right a{
 		padding: 0.8em;
 	}
 	.headerbg {
-		min-height: 409px;
+		background: url(../images/mbanner.png);
+		width:100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		min-height:371px;
 	}
 	.banner-info {
-		top: 36px;
+		top: 40px;
 		width: 100%;
 		left: 0%;
 		text-align: center;
@@ -859,14 +905,14 @@ p.copy-right a{
 		line-height: 1.6em;
 	}
 	.nav ul{
-		margin:0;
+		margin:-0.3em;
 		padding:0;
 	}
 	.nav ul li {
-		margin: 0.5em 0.2em;
+		margin: 0.2em 0.2em;
 	}
 	.logo {
-		margin: 0.8em 0 0em 0em;
+		margin: 0;
 		float:none;
 		text-align:center;
 	}
@@ -880,7 +926,7 @@ p.copy-right a{
 	}
 	.bannerlogo {
 		float: none;
-		margin-top: 0em;
+		margin-top: 5em;
 		text-align: center;
 	}
 	.skill-grid h3 {
