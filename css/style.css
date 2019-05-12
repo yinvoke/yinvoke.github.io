@@ -22,14 +22,19 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 }
 /*------ HEADERBG STARTS---------*/
 .headerbg{
-	background: url(../images/bannerbg.png);
+	background: url(../images/banner.png);
 	min-height:700px;
 	width:100%;
-	background-size:cover;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 /*------ HEADER STARTS---------*/
 .header{
 	background:rgba(0, 0, 0, 0.24);
+	position:fixed;
+	width: 100%;
+	z-index: 999;
+	_position:absolute;
 }
 /*------ CONTAINER STARTS---------*/
 .container{
