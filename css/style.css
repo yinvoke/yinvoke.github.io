@@ -404,21 +404,7 @@ p.copy-right a{
 	text-decoration:none;
 }
  /*----- top-top -----*/
-/*14寸*/
-@media (max-width:1280px){
- 	.years p {
-		width: 60%;
-	}
-	.portfolio-grid p {
-		margin: 2em 0em 0 0em;
-	}
-	.footer-left p {
-		width: 90%;
-	}
-	.headerbg {
-		min-height: 500px;
-	}
-}
+
 /*iPad Pro*/
 @media (max-width:1024px){
 	.container {
@@ -539,7 +525,7 @@ p.copy-right a{
 		padding: 0 0 10em;
 	}
 }
-/*ip67plus*/
+/*ip678plus*/
 @media (max-width:480px){
 	.container {
 		width:95%;
@@ -668,29 +654,8 @@ p.copy-right a{
 		left: 47%;
 	}
 }
-/*ip67x*/
+/*ip678x*/
 @media (max-width:414px){
-	.container {
-		width:95%;
-	}
- 	.years p {
-		width: 100%;
-		line-height: 1.6em;
-		padding: 0.5em 0 0 0;
-	}
-	.portfolio-grid p {
-		margin: 2em 0em 0 0em;
-	}
-	.footer-left p {
-		width: 100%;
-		margin: 0.8em 0 0 0;
-	}
-	.banner-info {
-		width: 80%;
-	}
-	.footer-right input[type="text"], .footer-right textarea {
-		width: 100%;
-	}
 	.headerbg {
 		background: url(../images/mbanner.png);
 		width:100%;
@@ -698,104 +663,19 @@ p.copy-right a{
 		background-repeat: no-repeat;
 		min-height:435px;
 	}
-	.banner-info {
-		top: 36px;
-		width: 100%;
-		left: 0%;
-		text-align: center;
+	
+}
+
+/*galaxy*/
+@media (max-width:360px){
+	.headerbg {
+		background: url(../images/mbanner.png);
+		width:100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		min-height:417.9px;
 	}
-	a.downarrow {
-		top: 201px;
-		left: 42%;
-	}
-	.years {
-		margin-bottom: 2em;
-	}
-	.header-section h2 {
-		padding: 0.8em 0 0.5em 0;
-		line-height:1.5em;
-	}
-	.bannerhead {
-		width: 100%;
-	}
-	.banner {
-		width: 100%;
-	}
-	.years h4, .years span h4 {
-		margin: 0.5em 0 0 0;
-	}
-	.skill-grid {
-		padding: 1.5em 0;
-	}
-	.skill-grids {
-		padding: 1em 0;
-	}
-	a.down {
-		padding: 0;
-		position: absolute;
-		left: 45%;
-	}
-	.skills {
-		padding: 0 0 5em 0;
-	}
-	.skill-section h2 {
-		margin-top: 0.5em;
-	}
-	a.arrow {
-		margin: 1em 0 2em 0;
-	}
-	.portfolio-grids {
-		padding-top: 1em;
-	}
-	.portfolio-grid {
-		padding: 0 0 2em 0;
-	}
-	a.portdown {
-		margin: 1em 0 2em 0em;
-	}
-	.contact-section h2 {
-		padding-top: 0.5em;
-	}
-	.footer {
-		padding: 0 0 6em;
-	}
-	.about span p {
-		margin-bottom: 2em;
-		width: 100%;
-		line-height: 1.6em;
-	}
-	.nav ul{
-		margin:0;
-		padding:0;
-	}
-	.nav ul li {
-		margin: 0.1em 0.7em;
-	}
-	.logo {
-		margin: 0;
-		float:none;
-		text-align:center;
-	}
-	.bannerhead h3 {
-		font-size: 1.5em;
-		margin: 0.2em 0 0.2em;
-	}
-	.nav {
-		float: none;
-		text-align:center;
-	}
-	.bannerlogo {
-		float: none;
-		margin-top: 6em;
-		text-align: center;
-	}
-	.skill-grid h3 {
-		font-size: 1.5em;
-	}
-	.up {
-		bottom: 1%;
-		left: 47%;
-	}
+	
 }
 /*ip5*/
 @media (max-width:320px){
