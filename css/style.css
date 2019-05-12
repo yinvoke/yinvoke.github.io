@@ -443,7 +443,7 @@ p.copy-right a{
 	}
 }
 /*ipad*/
-@media (max-width:768px){
+@media (max-width:800px){
 	.container {
 		width:80%;
 	}
@@ -463,7 +463,7 @@ p.copy-right a{
 		width: 100%;
 	}
 	.headerbg {
-		min-height:353px;
+		min-height:368px;
 	}
 	.banner-info {
 		top: 112px;
@@ -523,6 +523,12 @@ p.copy-right a{
 	}
 	.footer {
 		padding: 0 0 10em;
+	}
+}
+/*ipad*/
+@media (max-width:768px){
+	.headerbg {
+		min-height:353px;
 	}
 }
 /*ip678plus*/
