@@ -404,7 +404,48 @@ p.copy-right a{
 	text-decoration:none;
 }
  /*----- top-top -----*/
-
+@media (max-width:1366px){
+	.container {
+		width:80%;
+	}
+ 	.years p {
+		width: 80%;
+	}
+	.portfolio-grid p {
+		margin: 2em 0em 0 0em;
+	}
+	.footer-left p {
+		width: 90%;
+	}
+	.banner-info {
+		width: 80%;
+	}
+	.footer-right input[type="text"], .footer-right textarea {
+		width: 87%;
+	}
+	.headerbg {
+		min-height: 503px;
+	}
+	.banner-info {
+		top: 110px;
+	}
+	a.downarrow {
+		top: 341px;
+		left: 23%;
+	}
+	.years {
+		margin-bottom: 2em;
+	}
+	.header-section h2 {
+		padding: 1.2em 0 0.8em 0;
+	}
+}
+/*iPad Pro*/
+@media (max-width:1080px){
+	.headerbg {
+		min-height: 469px;
+	}
+}
 /*iPad Pro*/
 @media (max-width:1024px){
 	.container {
