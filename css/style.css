@@ -1,9 +1,4 @@
-/*----
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
----*/
+
 html,body{
 	font-family: 'Lato', sans-serif;
 }
@@ -24,9 +19,10 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 .headerbg{
 	background: url(../images/banner.png);
 	width:100%;
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	min-height:698px;
+	position: relative;
 }
 
 /*------ HEADER STARTS---------*/
@@ -107,18 +103,7 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
     text-shadow: #ccc;
     font-size:1.1em;
 }
-a.downarrow  span{
- 	height:48px;
-    width:48px;
-    background:url(../images/down.png);
-    display:inline-block;
-}
-a.downarrow{
-  	display: block;
-	position: absolute;
-	top: 370px;
-	left: 17%;
-}
+
 .bannerhead{
 	position: relative;
 	width: 90%;
@@ -132,13 +117,11 @@ a.downarrow{
 .about{
 	color:white;
 	text-align:center;
-	background:#281D24;
+	background:white;
 }
 .header-section h2{
-	color: #C6C3C5;
-	font-weight: 300;
-	margin-top: 2.5em;
-	margin: 0;
+	color: #2F242C;
+	font-weight: bolder;
 	padding: 2em 0 1em 0;
 }
 .header-section span{
@@ -163,7 +146,7 @@ a.downarrow{
 }
 .years{
 	margin-bottom:4em;
-	color:#F1F0F0;
+	color:#2B2629;
 }
 .years p{
 	padding-top:1em;
@@ -178,16 +161,7 @@ a.downarrow{
 .years h4,.years span h4{
 	margin-top:1em;
 }
-.arrow span{
-	height:48px;
-	width:48px;
-	background:url(../images/bwn.png);
-	display:inline-block;
-}
-a.arrow{
-	margin:2em 0 4em 0;
-	display:inline-block;
-}
+
 /*------Skill-Section STARTS---------*/
 .skills{
 	min-height:600px;
@@ -195,10 +169,8 @@ a.arrow{
 	position:relative;
 }
 .skill-section h2{
-	color: #C6C3C5;
-	font-weight: 300;
-	margin-top: 2.5em;
-	margin: 0;
+	color: gray;
+	font-weight: bolder;
 	padding: 2em 0 1em 0;
 }
 .skill-section span{
@@ -227,18 +199,7 @@ a.arrow{
 #canvas{
 	position:relative;
 }
-.down span{
-	height:48px;
-	width:48px;
-	background:url(../images/bwn.png);
-	display:inline-block;
-}
-a.down{
-	padding:4em 0 0 2em;
-	display:inline-block;
-	position: absolute;
-    left:46%;
-}
+
 /*------Skill-Section Ends---------*/
 /*------Portfolio-Section STARTS---------*/
 .Portfolio{
@@ -247,10 +208,8 @@ a.down{
 	text-align:center;
 }
 .Portfolio-section h2{
-	color: #C6C3C5;
-	font-weight: 300;
-	margin-top: 2.5em;
-	margin: 0;
+	color: #2F242C;
+	font-weight: bolder;
 	padding: 2em 0 1em 0;
 
 }
@@ -284,7 +243,8 @@ a.down{
 	height: 100%;
 }
 .img_div img{
-	min-width: 88px;
+	width:200px;
+	height: 160px;
     height: auto;
 }
 .img_mask {
@@ -326,39 +286,18 @@ a.down{
     opacity: 1;           
 }
 
-a.rightarrow  span{
-	height:30px;
-	width:30.5px;
-	background:url(../images/rightarw.png);
-	display:inline-block;
-}
-a.rightarrow{
-	margin-top:1em;
-	display:inline-block;
-}
-.portdown span{
-	height:48px;
-	width:48px;
-	background:url(../images/bwn.png);
-	display:inline-block;
-	}
-a.portdown{
-	margin:4em 0 3em 1em;
-	display:inline-block;
-	}
+
+
 /*------FOOTER STARTS---------*/
 .footer{
-	background: url(../images/footerbg.jpg);
+	background:#20191B;
 	position: relative;
 	min-height: 567px;
 	background-size: cover;
-	position:relative;
 }
 .contact-section h2{
-	color: #C6C3C5;
-	font-weight: 300;
-	margin-top: 2.5em;
-	margin: 0;
+	color: gray;
+	font-weight: bolder;
 	padding: 2em 0 1em 0;
 }
 .contact-section span{
@@ -497,58 +436,17 @@ p.copy-right a{
 }
 /*iPad Pro*/
 @media (max-width:1024px){
-	.container {
-		width:80%;
-	}
- 	.years p {
-		width: 80%;
-	}
-	.portfolio-grid p {
+	.portfolio-grid img {
+		width: 180px;
+		height: 150px;
 		margin: 2.2em 0em 1em 0em;
-	}
-	.footer-left p {
-		width: 90%;
-	}
-	.banner-info {
-		width: 80%;
-	}
-	.footer-right input[type="text"], .footer-right textarea {
-		width: 87%;
 	}
 	.headerbg {
 		min-height: 470px;
 	}
-	.banner-info {
-		top: 110px;
-	}
-	a.downarrow {
-		top: 341px;
-		left: 23%;
-	}
-	.years {
-		margin-bottom: 2em;
-	}
 }
 /*ipad*/
 @media (max-width:800px){
-	.container {
-		width:80%;
-	}
- 	.years p {
-		width: 80%;
-	}
-	.portfolio-grid p {
-		margin: 2.2em 0em 1em 0em;
-	}
-	.footer-left p {
-		width: 90%;
-	}
-	.banner-info {
-		width: 80%;
-	}
-	.footer-right input[type="text"], .footer-right textarea {
-		width: 100%;
-	}
 	.headerbg {
 		min-height:368px;
 	}
@@ -560,9 +458,6 @@ p.copy-right a{
 	a.downarrow {
 		top: 241px;
 		left: 32%;
-	}
-	.years {
-		margin-bottom: 2em;
 	}
 	.bannerhead {
 		width: 84%;
@@ -614,6 +509,12 @@ p.copy-right a{
 	}
 	.footer {
 		padding: 0 0 10em;
+	}
+}
+/*ipad*/
+@media (max-width:780px){
+	.headerbg {
+		min-height:358px;
 	}
 }
 /*ipad*/
@@ -756,10 +657,20 @@ p.copy-right a{
 /*ip678x*/
 @media (max-width:414px){
 	.headerbg {
-		background: url(../images/mbanner.png);
-		width:100%;
-		background-size: contain;
-		background-repeat: no-repeat;
+		min-height:435px;
+	}
+	
+}
+/*galaxy*/
+@media (max-width:412px){
+	.headerbg {
+		min-height:477px;
+	}
+	
+}
+/*galaxy*/
+@media (max-width:380px){
+	.headerbg {
 		min-height:435px;
 	}
 	
@@ -768,10 +679,6 @@ p.copy-right a{
 /*galaxy*/
 @media (max-width:360px){
 	.headerbg {
-		background: url(../images/mbanner.png);
-		width:100%;
-		background-size: contain;
-		background-repeat: no-repeat;
 		min-height:417.9px;
 	}
 	
@@ -779,7 +686,7 @@ p.copy-right a{
 /*ip5*/
 @media (max-width:320px){
 	.container {
-		width:80%;
+		width:100%;
 	}
 	.header div.container,.banner div.container{
 		padding:0;
@@ -805,10 +712,6 @@ p.copy-right a{
 		padding: 0.8em;
 	}
 	.headerbg {
-		background: url(../images/mbanner.png);
-		width:100%;
-		background-size: contain;
-		background-repeat: no-repeat;
 		min-height:371px;
 	}
 	.banner-info {
