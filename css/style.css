@@ -82,26 +82,34 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 }
 .bannerhead{
 	float:right;
+	padding-top: 1em;
 }
 .bannerhead h2{
 	color: #281D24;
 	margin:0;
 	padding:0;
+	font-size:1.7em;
+	font-weight: bolder;
+	text-shadow: 3px 1px 1em white,1px 1px 1em white,1px 1px 0.7em white,1px 1px 0.7em white;
 }
 .bannerhead h2 span{
 	color:#F1E9F2;
 	font-weight:bolder;
-	font-size:1.3em;
+	font-size:1.5em;
+	text-shadow: 1px 1px 0.5em black;
 }
 .bannerhead h3{
 	color:#281D24;
 	font-weight:bolder;
-    font-size:2.5em;
+    font-size:2.4em;
+    color: #33313b;
 }
 .bannerhead p{
-    color:white;
-    text-shadow: #ccc;
+    color:#d9d8d6;
+    font-weight: bolder;
     font-size:1.1em;
+    -webkit-text-stroke: 0.4px black;
+    text-shadow: 0.1em 0.1em 0.2em black
 }
 
 .bannerhead{
@@ -122,7 +130,7 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 .header-section h2{
 	color: #2F242C;
 	font-weight: bolder;
-	padding: 2em 0 1em 0;
+	padding: 1em 0 1em 0;
 }
 .header-section span{
 	background: #8C868A;
@@ -171,7 +179,7 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 .skill-section h2{
 	color: gray;
 	font-weight: bolder;
-	padding: 2em 0 1em 0;
+	padding: 1em 0 1em 0;
 }
 .skill-section span{
 	background: #8C868A;
@@ -210,7 +218,7 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 .Portfolio-section h2{
 	color: #2F242C;
 	font-weight: bolder;
-	padding: 2em 0 1em 0;
+	padding: 1em 0 1em 0;
 
 }
 .Portfolio-section span{
@@ -298,7 +306,7 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 .contact-section h2{
 	color: gray;
 	font-weight: bolder;
-	padding: 2em 0 1em 0;
+	padding: 1em 0 1em 0;
 }
 .contact-section span{
 	background: #8C868A;
@@ -329,6 +337,9 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 	width:80%;
 	margin:2em 0 0 0em;
 	line-height:2em;
+}
+.footer-left a{
+	color:#BDA9C5;
 }
 .footer-right{
 	text-align: right;
@@ -460,6 +471,7 @@ p.copy-right a{
 		left: 32%;
 	}
 	.bannerhead {
+		padding-top: 1em;
 		width: 84%;
 	}
 	
