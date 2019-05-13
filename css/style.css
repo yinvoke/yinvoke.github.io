@@ -461,14 +461,21 @@ p.copy-right a{
 	.headerbg {
 		min-height:368px;
 	}
+	.footer-left p {
+		width: 100%;
+		margin: 0.8em 0 0 0;
+	}
+	.footer-right input[type="text"], .footer-right textarea {
+		width: 100%;
+	}
+	.footer-right input[type="submit"] {
+		float: none;
+		width:25%
+	}
 	.banner-info {
 		top: 112px;
 		width: 100%;
 		left: 2%;
-	}
-	a.downarrow {
-		top: 241px;
-		left: 32%;
 	}
 	.bannerhead {
 		padding-top: 1em;
@@ -487,11 +494,6 @@ p.copy-right a{
 	.skill-grids {
 		padding: 1em 0;
 	}
-	a.down {
-		padding: 0;
-		position: absolute;
-		left: 47%;
-	}
 	.skills {
 		padding: 0 0 5em 0;
 	}
@@ -507,17 +509,11 @@ p.copy-right a{
 	.skill-section h2 {
 		margin-top: 1.0em;
 	}
-	a.arrow {
-		margin: 1em 0 2em 0;
-	}
 	.portfolio-grids {
 		padding-top: 1em;
 	}
 	.portfolio-grid {
 		padding: 0 0 2em 0;
-	}
-	a.portdown {
-		margin: 2em 0 2em 0em;
 	}
 	.footer {
 		padding: 0 0 10em;
@@ -571,10 +567,6 @@ p.copy-right a{
 		left: 0%;
 		text-align: center;
 	}
-	a.downarrow {
-		top: 201px;
-		left: 42%;
-	}
 	.years {
 		margin-bottom: 2em;
 	}
@@ -605,25 +597,14 @@ p.copy-right a{
 	.skill-grids {
 		padding: 1em 0;
 	}
-	a.down {
-		padding: 0;
-		position: absolute;
-		left: 45%;
-	}
 	.skills {
 		padding: 0 0 5em 0;
-	}
-	a.arrow {
-		margin: 1em 0 2em 0;
 	}
 	.portfolio-grids {
 		padding-top: 1em;
 	}
 	.portfolio-grid {
 		padding: 0 0 2em 0;
-	}
-	a.portdown {
-		margin: 1em 0 2em 0em;
 	}
 	.footer {
 		padding: 0 0 6em;
@@ -732,10 +713,6 @@ p.copy-right a{
 		left: 0%;
 		text-align: center;
 	}
-	a.downarrow {
-		top: 171px;
-		left: 42%;
-	}
 	.years {
 		margin-bottom: 1.5em;
 	}
@@ -777,27 +754,15 @@ p.copy-right a{
 	.skill-grids {
 		padding: 1em 0;
 	}
-	a.down {
-		padding: 0;
-		position: absolute;
-		left: 45%;
-	}
 	.skills {
 		padding: 0 0 5em 0;
-	}
-	a.arrow {
-		margin: 1em 0 2em 0;
 	}
 	.portfolio-grids {
 		padding-top: 1em;
 	}
 	.portfolio-grid {
 		padding: 0 0 2em 0;
-	}
-	a.portdown {
-		margin: 1em 0 2em 0em;
-	}
-	.footer {
+	}	.footer {
 		padding: 0 0 6em;
 	}
 	.about span p {
