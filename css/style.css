@@ -390,7 +390,7 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 .up span{
 	height:48px;
 	width:48px;
-	background:url(../images/up.png);
+	background:url(../images/up.webp);
 	margin-top:2em;
 	display:inline-block;
 }
