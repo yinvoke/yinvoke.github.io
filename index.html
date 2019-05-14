@@ -18,17 +18,21 @@
 <body>
   <script type="text/javascript">
     function changelanguage(){
+      var u = navigator.userAgent;
+      var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
       var navType=navigator.appName
       if (navType=="Netscape"){
       var lang = navigator.language
-      }
-      else{
+      }else{
       var lang = navigator.userLanguage
       }
       //取得浏览器语言的前两个字母
       var lang = lang.substr(0,2)
-      // 非中文就加载英文js
-      if (lang == "en"){
+      if (lang == "en" && isiOS){
+        window.location.replace('indexios_en.html')
+      }else if(lang == "zn" && isiOS){
+        window.location.replace('indexios.html')
+      }else if(lang == "en" && !isiOS){
         window.location.replace('index_en.html')
       }
     }
@@ -72,7 +76,7 @@
       <div class="container">
         <div class="banner-info">
           <div class="bannerlogo">
-            <img src="https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/diamond.webp">
+            <img src="https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/diamond.png">
           </div>
           <div class="bannerhead">
             <h2>我叫 	
@@ -85,7 +89,7 @@
         <div class="clear"></div>
       </div>
     </div>
-    <img src="https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/banner.webp" class="headerbg">
+    <img src="https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/banner.png" class="headerbg">
     <!------Banner ends-------->
   </div>
   <!------Headerbg ends-------->
@@ -242,7 +246,7 @@
       <div class="portfolio-grids">
         <div class="portfolio-grid col-md-4">
           <div class="img_div">
-			<img src="https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/wsh.webp" alt="兰州财经大学微生活">
+			<img src="https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/wsh.png" alt="兰州财经大学微生活">
             	<div class="img_mask" >
                		<h3>
                			该小程序致力于带给兰州财经大学的同学更方便快捷的校园生活体验，日前使用人数为954人<br><br>
@@ -255,7 +259,7 @@
         </div>
         <div class="portfolio-grid col-md-4">
           <div class="img_div">
-			<img src="https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/wlw.webp" alt="基于物联网的实时数据采集系统">
+			<img src="https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/wlw.png" alt="基于物联网的实时数据采集系统">
             	<div class="img_mask">
                		<h3>
                			课程项目，完成了基于物联网的实时数据采集系统<br><br>
@@ -268,7 +272,7 @@
         </div>
         <div class="portfolio-grid col-md-4">
           <div class="img_div">
-			<img src=" https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/vmail.webp" alt="vmail">
+			<img src=" https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/vmail.png" alt="vmail">
             	<div class="img_mask">
                		<h3>
                			课程设计项目，该小程序可以提供便捷的邮件收发功能<br><br>
@@ -303,13 +307,13 @@
           <div class="footer-left">
             <div class="social-icons">
               <a href="https://github.com/yinvoke">
-                <img src="https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/github.webp">
+                <img src="https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/github.png">
               </a>
               <a href="https://blog.csdn.net/qq_40294512">
-                <img src="https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/csdn.webp">
+                <img src="https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/csdn.png">
               </a>
               <a href="https://www.jianshu.com/u/83f24c47509e">
-                <img src="https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/jianshu.webp">
+                <img src="https://yinvoker-1259232793.cos.ap-chengdu.myqcloud.com/jianshu.png">
               </a>
             </div>
             <p>想要了解更多我的信息以点击查看我的 <a href="https://github.com/yinvoke">github</a> / <a href="https://blog.csdn.net/qq_40294512">csdn博客</a> / <a href="https://www.jianshu.com/u/83f24c47509e">简书博客</a> ，当然也给我发送电子邮件~</p>
