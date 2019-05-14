@@ -18,8 +18,6 @@
 <body>
   <script type="text/javascript">
     function changelanguage(){
-      var u = navigator.userAgent;
-      var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
       var navType=navigator.appName
       if (navType=="Netscape"){
       var lang = navigator.language
@@ -28,11 +26,7 @@
       }
       //取得浏览器语言的前两个字母
       var lang = lang.substr(0,2)
-      if (lang == "en" && isiOS){
-        window.location.replace('indexios_en.html')
-      }else if(lang == "zn" && isiOS){
-        window.location.replace('indexios.html')
-      }else if(lang == "en" && !isiOS){
+      if (lang == "en"){
         window.location.replace('index_en.html')
       }
     }
