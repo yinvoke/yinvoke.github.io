@@ -1,6 +1,6 @@
 # yinvoke.github.io
 
- 小隐的个人简历
+ 🍉小隐的个人简历[☞点击这里](https://yinvoke.github.io)
 
 ## 简历分为四部分：
 1. 关于
